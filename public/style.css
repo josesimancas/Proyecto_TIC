@@ -1,0 +1,86 @@
+body { 
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+
+  /* 🔹 Fondo con imagen */
+  background-image: url('imagenes/fondo pantalla.jpg'); /* Cambia la ruta por la tuya */
+  background-size: cover;       /* Hace que la imagen cubra toda la pantalla */
+  background-position: center;  /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que se repita */
+  background-attachment: fixed; /* Mantiene el fondo fijo al hacer scroll */
+
+  color: #333; /* Color de texto oscuro para buen contraste */
+}
+
+header { /* Estilos para el encabezado */
+  background: linear-gradient(90deg, #004D98, #62ded5);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 0 0 20px 20px;
+}
+
+.intro, .galeria, .formulario { /* Estilos para las secciones */
+  padding: 20px;
+  margin: 20px;
+  background: rgba(255, 255, 255, 0.9); /* Fondo semitransparente para que se vea la imagen detrás */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* 🔹 Galería */
+.galeria .imagenes {
+  display: flex;
+  flex-wrap: wrap;        /* Permite que las imágenes salten de línea si no caben */
+  gap: 20px;
+  justify-content: center;
+  }
+
+.galeria img {
+  width: 100%;
+  max-width: 220px;        /* Tamaño máximo para no crecer demasiado */
+  height: auto;            /* Mantiene la proporción */
+  border-radius: 10px;
+  border: 2px solid #004D98;
+  object-fit: cover;      /* Ajusta las imágenes sin deformarlas */
+  }
+
+.imagenes img:hover {     /*animacion al pasar el mouse sobre la imagen*/
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* 🔹 Formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea, button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #cccccc;
+  border: 3px solid #5978F3;
+  border-style: groove;
+}
+
+button {
+  background: #047bf2;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover { /*animacion al pasar el mouse sobre el boton*/
+  background: #A50044;
+}
+
+footer { /* Estilos para el pie de página */
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  width: 100%;
+  } 
